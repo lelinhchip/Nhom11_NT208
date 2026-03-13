@@ -1,5 +1,5 @@
 # Nhom11_NT208
-##Lỗi syntax
+## Lỗi syntax
 1. File pages\customers.php (Dòng 6)
 Lỗi: Unclosed '[' does not match ')'
 Thiếu dấu ]
