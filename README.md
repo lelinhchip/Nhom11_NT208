@@ -9,3 +9,15 @@
 3. File pages\settings.php (Dòng 7)
 - Lỗi: unexpected token ";", expecting "]"
 - Thiếu dấu ] sau dòng 6
+## Lỗi logic
+1. Lỗi logic trạng thái đơn hàng File pages\dashboard.php
+- Đoạn code hiện tại:
+```php
+if ($order['status'] === 'pending') {
+$completedOrders++;
+$totalRevenue += calculate_order_total($order, $products);
+}
+```
+- Biến được đặt tên là `$completedOrders` dùng để tính doanh thu `$totalRevenue`, nhưng code lại đang kiểm tra điều kiện là `'pending'`
+- Sửa: Đổi `'pending'` thành `'completed'`
+   
