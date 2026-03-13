@@ -13,7 +13,7 @@ foreach ($orders as $order) {
 $lowStockItems = [];
 
 foreach ($products as $sku => $product) {
-    if ($product['stock'] < 1) {
+    if ($product['stock'] < 5) {
         $lowStockItems[] = $sku . ' - ' . $product['name'];
     }
 }
